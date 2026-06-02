@@ -21,7 +21,7 @@ public class MoodRoomTrigger : MonoBehaviour
 
         if (moodController == null)
         {
-            Debug.LogWarning("MoodController is missing on " + gameObject.name);
+            Debug.LogWarning("MoodController missing on " + gameObject.name);
             return;
         }
 
@@ -30,15 +30,12 @@ public class MoodRoomTrigger : MonoBehaviour
             case MoodType.Calm:
                 moodController.PlayCalm();
                 break;
-
             case MoodType.Confused:
                 moodController.PlayConfused();
                 break;
-
             case MoodType.Celebrate:
                 moodController.PlayCelebrate();
                 break;
-
             case MoodType.Focus:
                 moodController.PlayFocus();
                 break;

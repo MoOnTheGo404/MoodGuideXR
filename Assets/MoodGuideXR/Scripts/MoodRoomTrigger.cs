@@ -16,6 +16,8 @@ public class MoodRoomTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Something entered trigger: " + other.name + " | Tag: " + other.tag);
+
         if (!other.CompareTag("Player"))
             return;
 

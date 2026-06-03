@@ -5,6 +5,7 @@ public class MoodRoomTrigger : MonoBehaviour
 {
     public MoodAnimationController moodController;
     public TMP_Text moodMessageText;
+    public GeminiManager geminiManager;
 
     public enum MoodType
     {
@@ -33,23 +34,28 @@ public class MoodRoomTrigger : MonoBehaviour
         {
             case MoodType.Calm:
                 moodController.PlayCalm();
-                ShowMessage("Take a deep breath. You are safe and doing okay.");
                 break;
 
             case MoodType.Confused:
                 moodController.PlayConfused();
-                ShowMessage("It is okay to feel confused. Take one small step at a time.");
                 break;
 
             case MoodType.Celebrate:
                 moodController.PlayCelebrate();
-                ShowMessage("Great job! You should be proud of your progress.");
                 break;
 
             case MoodType.Focus:
                 moodController.PlayFocus();
-                ShowMessage("Stay focused. You have the ability to keep moving forward.");
                 break;
+        }
+
+        if (geminiManager != null)
+        {
+            StartCoroutine(geminiManager.GenerateMoodMessage(moodType.ToString(), ShowMessage));
+        }
+        else
+        {
+            ShowMessage(GetFallbackMessage(moodType));
         }
 
         Debug.Log("Entered mood room: " + moodType);
@@ -63,5 +69,22 @@ public class MoodRoomTrigger : MonoBehaviour
         }
 
         Debug.Log("Mood message: " + message);
+    }
+
+    private string GetFallbackMessage(MoodType mood)
+    {
+        switch (mood)
+        {
+            case MoodType.Calm:
+                return "Take a deep breath. You are safe and doing okay.";
+            case MoodType.Confused:
+                return "It is okay to feel confused. Take one small step at a time.";
+            case MoodType.Celebrate:
+                return "Great job! You should be proud of your progress.";
+            case MoodType.Focus:
+                return "Stay focused. You have the ability to keep moving forward.";
+            default:
+                return "You are doing your best, and that matters.";
+        }
     }
 }

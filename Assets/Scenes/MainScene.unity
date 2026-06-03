@@ -20987,6 +20987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1029432240}
   moodMessageText: {fileID: 1355743224}
+  geminiManager: {fileID: 2073750026}
   moodType: 2
 --- !u!65 &195144643
 BoxCollider:
@@ -68726,6 +68727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1193599334}
   moodMessageText: {fileID: 1427156806}
+  geminiManager: {fileID: 2073750026}
   moodType: 0
 --- !u!65 &663936460
 BoxCollider:
@@ -87724,6 +87726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1569493037}
   moodMessageText: {fileID: 745616087}
+  geminiManager: {fileID: 2073750026}
   moodType: 3
 --- !u!65 &848652402
 BoxCollider:
@@ -133758,15 +133761,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1927095934725912877, guid: a9b081014bad86f4a80b60284279d21b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.48
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1927095934725912877, guid: a9b081014bad86f4a80b60284279d21b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1927095934725912877, guid: a9b081014bad86f4a80b60284279d21b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.24
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1927095934725912877, guid: a9b081014bad86f4a80b60284279d21b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -183879,6 +183882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 544065158}
   moodMessageText: {fileID: 129551448}
+  geminiManager: {fileID: 2073750026}
   moodType: 1
 --- !u!65 &1761968010
 BoxCollider:
@@ -216926,6 +216930,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1423723392088789992, guid: 0bb0235386000d5498a4c894bd92c757, type: 3}
   m_PrefabInstance: {fileID: 2073164849}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2073750025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2073750027}
+  - component: {fileID: 2073750026}
+  m_Layer: 0
+  m_Name: GeminiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2073750026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073750025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b609f94ce7c647ddbb930a4c5710b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GeminiManager
+  apiKey: 
+--- !u!4 &2073750027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073750025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2073807680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -226513,3 +226562,4 @@ SceneRoots:
   - {fileID: 1761968013}
   - {fileID: 195144646}
   - {fileID: 848652405}
+  - {fileID: 2073750027}

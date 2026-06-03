@@ -20986,6 +20986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1029432240}
+  moodMessageText: {fileID: 1355743224}
   moodType: 2
 --- !u!65 &195144643
 BoxCollider:
@@ -68724,6 +68725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1193599334}
+  moodMessageText: {fileID: 1427156806}
   moodType: 0
 --- !u!65 &663936460
 BoxCollider:
@@ -87721,6 +87723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 1569493037}
+  moodMessageText: {fileID: 745616087}
   moodType: 3
 --- !u!65 &848652402
 BoxCollider:
@@ -183875,6 +183878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoodRoomTrigger
   moodController: {fileID: 544065158}
+  moodMessageText: {fileID: 129551448}
   moodType: 1
 --- !u!65 &1761968010
 BoxCollider:

@@ -1,8 +1,10 @@
 using UnityEngine;
+using TMPro;
 
 public class MoodRoomTrigger : MonoBehaviour
 {
     public MoodAnimationController moodController;
+    public TMP_Text moodMessageText;
 
     public enum MoodType
     {
@@ -31,18 +33,35 @@ public class MoodRoomTrigger : MonoBehaviour
         {
             case MoodType.Calm:
                 moodController.PlayCalm();
+                ShowMessage("Take a deep breath. You are safe and doing okay.");
                 break;
+
             case MoodType.Confused:
                 moodController.PlayConfused();
+                ShowMessage("It is okay to feel confused. Take one small step at a time.");
                 break;
+
             case MoodType.Celebrate:
                 moodController.PlayCelebrate();
+                ShowMessage("Great job! You should be proud of your progress.");
                 break;
+
             case MoodType.Focus:
                 moodController.PlayFocus();
+                ShowMessage("Stay focused. You have the ability to keep moving forward.");
                 break;
         }
 
         Debug.Log("Entered mood room: " + moodType);
+    }
+
+    private void ShowMessage(string message)
+    {
+        if (moodMessageText != null)
+        {
+            moodMessageText.text = message;
+        }
+
+        Debug.Log("Mood message: " + message);
     }
 }

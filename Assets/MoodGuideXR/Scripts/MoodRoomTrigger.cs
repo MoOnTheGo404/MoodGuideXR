@@ -67,6 +67,10 @@ public class MoodRoomTrigger : MonoBehaviour
         {
             moodMessageText.text = message;
         }
+        else
+        {
+            Debug.LogWarning("Mood Message Text is not assigned on " + gameObject.name);
+        }
 
         Debug.Log("Mood message: " + message);
     }

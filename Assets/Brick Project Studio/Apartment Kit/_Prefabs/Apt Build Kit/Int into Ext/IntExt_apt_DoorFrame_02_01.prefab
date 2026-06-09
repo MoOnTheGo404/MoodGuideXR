@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 541941578431848121}
   m_Layer: 0
   m_Name: Glass.003
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

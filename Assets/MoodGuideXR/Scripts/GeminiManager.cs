@@ -12,7 +12,7 @@ public class GeminiManager : MonoBehaviour
     [Header("Gemini API")]
     [Tooltip("Leave EMPTY in the committed scene. Anyone testing pastes their own key here at runtime. " +
              "Note: a key in a client build is extractable - fine for a class demo, not for production.")]
-    public string apiKey = "AQ.Ab8RN6JhrK_IcGwT-tihcsvpbgfCV_c5bQvXj6J0yUMPrEqkGQ";
+    public string apiKey = "";
 
     [Tooltip("Current stable model. gemini-1.5-* models are shut down and now return 404.")]
     public string model = "gemini-2.5-flash-lite";

@@ -221275,7 +221275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b609f94ce7c647ddbb930a4c5710b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeminiManager
-  apiKey: AQ.Ab8RN6JhrK_IcGwT-tihcsvpbgfCV_c5bQvXj6J0yUMPrEqkGQ
+  apiKey: 
   model: gemini-2.5-flash-lite
 --- !u!4 &2073750027
 Transform:
